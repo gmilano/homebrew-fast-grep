@@ -9,28 +9,28 @@
 class FastGrep < Formula
   desc "Indexed regex search. 6-25x faster than ripgrep on large codebases"
   homepage "https://github.com/gmilano/fast-grep-rust"
-  version "0.2.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/gmilano/fast-grep-rust/releases/download/v#{version}/fast-grep-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "3683a0cc729c4212b00c1bb75cfacdf75e9769e21ea3b6197cf958b87835060e"
+      sha256 "30347ec44a2366df64445c85c6075eccbb869b6ed96b2536054e4534f2b5bd6d"
     end
     on_intel do
       url "https://github.com/gmilano/fast-grep-rust/releases/download/v#{version}/fast-grep-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "85827021fb6fc7e4cd98cfb74b004f59a2e54381438a1f9c5dbc2d91e266fc4d"
+      sha256 "346359e3b902ecfe5284a7ea5e1f1a5ea6df16060d1e0d0e7884b4fb11ffdf4f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/gmilano/fast-grep-rust/releases/download/v#{version}/fast-grep-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "86af04099b221babe0f1c3d8e5015ffe897af60aa9376a256d3ba9d6994b0620"
+      sha256 "a47557954ff03f2ee8c74690358cca832425b4496639f7ef945daf93520b3748"
     end
     on_intel do
       url "https://github.com/gmilano/fast-grep-rust/releases/download/v#{version}/fast-grep-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "98fa4e96cb36553968109f31d6bdbb1cd4412eec7640b0420d8b09bc78afa794"
+      sha256 "63474cd100cb662aebb4350183586462fb5f45260ff95cf14593b0b7d9b1fa6e"
     end
   end
 
